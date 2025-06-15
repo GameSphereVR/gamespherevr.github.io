@@ -1,0 +1,162 @@
+:root {
+  --bg: #0a0a0a;
+  --fg: #f0f0f0;
+  --accent: #d4af37;
+  --dark-accent: #a88d2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: #111;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--accent);
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--accent);
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: var(--fg);
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  background: linear-gradient(135deg, #141414, #222);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  background: var(--accent);
+  color: #000;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: var(--dark-accent);
+}
+
+.projects {
+  background: #121212;
+  padding: 60px 20px;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--accent);
+}
+
+.game-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.game-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--dark-accent);
+}
+
+.game-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.game-info {
+  padding: 15px;
+}
+
+.game-info h3 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.game-info a {
+  color: var(--accent);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.about, .contact {
+  padding: 50px 20px;
+  text-align: center;
+  background: #101010;
+}
+
+.about h2, .contact h2 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer {
+  background: #080808;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #666;
+}
